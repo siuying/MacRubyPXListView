@@ -14,19 +14,35 @@
 		54E8E8A813D52A7100C0C3CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E8E8A613D52A7100C0C3CD /* MainMenu.xib */; };
 		54E8E8AB13D52A7100C0C3CD /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 54E8E8AA13D52A7100C0C3CD /* rb_main.rb */; };
 		54E8E8AD13D52A7100C0C3CD /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 54E8E8AC13D52A7100C0C3CD /* AppDelegate.rb */; };
+		54E8E91713D52ACA00C0C3CD /* PXListDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8E213D52ACA00C0C3CD /* PXListDocumentView.m */; };
+		54E8E91813D52ACA00C0C3CD /* PXListView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8E513D52ACA00C0C3CD /* PXListView+UserInteraction.m */; };
+		54E8E91913D52ACA00C0C3CD /* PXListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8E713D52ACA00C0C3CD /* PXListView.m */; };
+		54E8E91A13D52ACA00C0C3CD /* PXListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8EA13D52ACA00C0C3CD /* PXListViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54E8E89313D52A7100C0C3CD /* MacRubyPXListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacRubyPXListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E8E89713D52A7100C0C3CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		54E8E89913D52A7100C0C3CD /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		54E8E89E13D52A7100C0C3CD /* MacRubyPXListView-Info.plist */ = {isa = PBXFileReference; path = "MacRubyPXListView-Info.plist"; sourceTree = "<group>"; };
+		54E8E89E13D52A7100C0C3CD /* MacRubyPXListView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacRubyPXListView-Info.plist"; sourceTree = "<group>"; };
 		54E8E8A013D52A7100C0C3CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54E8E8A213D52A7100C0C3CD /* MacRubyPXListView-Prefix.pch */ = {isa = PBXFileReference; path = "MacRubyPXListView-Prefix.pch"; sourceTree = "<group>"; };
+		54E8E8A213D52A7100C0C3CD /* MacRubyPXListView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacRubyPXListView-Prefix.pch"; sourceTree = "<group>"; };
 		54E8E8A313D52A7100C0C3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54E8E8A713D52A7100C0C3CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		54E8E8AA13D52A7100C0C3CD /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		54E8E8AC13D52A7100C0C3CD /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		54E8E8E113D52ACA00C0C3CD /* PXListDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListDocumentView.h; sourceTree = "<group>"; };
+		54E8E8E213D52ACA00C0C3CD /* PXListDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXListDocumentView.m; sourceTree = "<group>"; };
+		54E8E8E313D52ACA00C0C3CD /* PXListView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PXListView+Private.h"; sourceTree = "<group>"; };
+		54E8E8E413D52ACA00C0C3CD /* PXListView+UserInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PXListView+UserInteraction.h"; sourceTree = "<group>"; };
+		54E8E8E513D52ACA00C0C3CD /* PXListView+UserInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PXListView+UserInteraction.m"; sourceTree = "<group>"; };
+		54E8E8E613D52ACA00C0C3CD /* PXListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListView.h; sourceTree = "<group>"; };
+		54E8E8E713D52ACA00C0C3CD /* PXListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXListView.m; sourceTree = "<group>"; };
+		54E8E8E813D52ACA00C0C3CD /* PXListViewCell+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PXListViewCell+Private.h"; sourceTree = "<group>"; };
+		54E8E8E913D52ACA00C0C3CD /* PXListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListViewCell.h; sourceTree = "<group>"; };
+		54E8E8EA13D52ACA00C0C3CD /* PXListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXListViewCell.m; sourceTree = "<group>"; };
+		54E8E8EB13D52ACA00C0C3CD /* PXListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListViewDelegate.h; sourceTree = "<group>"; };
+		54E8E8EC13D52ACA00C0C3CD /* PXListViewDropHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListViewDropHighlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,7 @@
 		54E8E89C13D52A7100C0C3CD /* MacRubyPXListView */ = {
 			isa = PBXGroup;
 			children = (
+				54E8E8B613D52ACA00C0C3CD /* PXListView */,
 				54E8E8AC13D52A7100C0C3CD /* AppDelegate.rb */,
 				54E8E8A513D52A7100C0C3CD /* Resources */,
 				54E8E8A913D52A7100C0C3CD /* Other Sources */,
@@ -104,6 +121,34 @@
 				54E8E8AA13D52A7100C0C3CD /* rb_main.rb */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		54E8E8B613D52ACA00C0C3CD /* PXListView */ = {
+			isa = PBXGroup;
+			children = (
+				54E8E8DC13D52ACA00C0C3CD /* Classes */,
+			);
+			name = PXListView;
+			path = External/PXListView;
+			sourceTree = SOURCE_ROOT;
+		};
+		54E8E8DC13D52ACA00C0C3CD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54E8E8E113D52ACA00C0C3CD /* PXListDocumentView.h */,
+				54E8E8E213D52ACA00C0C3CD /* PXListDocumentView.m */,
+				54E8E8E313D52ACA00C0C3CD /* PXListView+Private.h */,
+				54E8E8E413D52ACA00C0C3CD /* PXListView+UserInteraction.h */,
+				54E8E8E513D52ACA00C0C3CD /* PXListView+UserInteraction.m */,
+				54E8E8E613D52ACA00C0C3CD /* PXListView.h */,
+				54E8E8E713D52ACA00C0C3CD /* PXListView.m */,
+				54E8E8E813D52ACA00C0C3CD /* PXListViewCell+Private.h */,
+				54E8E8E913D52ACA00C0C3CD /* PXListViewCell.h */,
+				54E8E8EA13D52ACA00C0C3CD /* PXListViewCell.m */,
+				54E8E8EB13D52ACA00C0C3CD /* PXListViewDelegate.h */,
+				54E8E8EC13D52ACA00C0C3CD /* PXListViewDropHighlight.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +201,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 54E8E88813D52A7000C0C3CD;
 			productRefGroup = 54E8E89413D52A7100C0C3CD /* Products */;
@@ -188,6 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E8E8A413D52A7100C0C3CD /* main.m in Sources */,
+				54E8E91713D52ACA00C0C3CD /* PXListDocumentView.m in Sources */,
+				54E8E91813D52ACA00C0C3CD /* PXListView+UserInteraction.m in Sources */,
+				54E8E91913D52ACA00C0C3CD /* PXListView.m in Sources */,
+				54E8E91A13D52ACA00C0C3CD /* PXListViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
