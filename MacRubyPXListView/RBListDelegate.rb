@@ -7,7 +7,7 @@
 #
 
 
-class RBListDelegate 
+class RBListDelegate < ListDelegate
     def numberOfRowsInListView(aListView)
         15
     end
