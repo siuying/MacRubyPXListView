@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MacRubyPXListView' target in the 'MacRubyPXListView' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
