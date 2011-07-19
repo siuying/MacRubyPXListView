@@ -18,6 +18,10 @@
 		54E8E91813D52ACA00C0C3CD /* PXListView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8E513D52ACA00C0C3CD /* PXListView+UserInteraction.m */; };
 		54E8E91913D52ACA00C0C3CD /* PXListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8E713D52ACA00C0C3CD /* PXListView.m */; };
 		54E8E91A13D52ACA00C0C3CD /* PXListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E8EA13D52ACA00C0C3CD /* PXListViewCell.m */; };
+		54E8E92E13D52F4200C0C3CD /* MyListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E92D13D52F4200C0C3CD /* MyListViewCell.m */; };
+		54E8E93113D52F7A00C0C3CD /* ListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E93013D52F7A00C0C3CD /* ListDelegate.m */; };
+		54E8E93313D5301800C0C3CD /* RBListDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 54E8E93213D5301800C0C3CD /* RBListDelegate.rb */; };
+		54E8E93513D530EA00C0C3CD /* MyListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E8E93413D530EA00C0C3CD /* MyListViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,12 @@
 		54E8E8EA13D52ACA00C0C3CD /* PXListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXListViewCell.m; sourceTree = "<group>"; };
 		54E8E8EB13D52ACA00C0C3CD /* PXListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListViewDelegate.h; sourceTree = "<group>"; };
 		54E8E8EC13D52ACA00C0C3CD /* PXListViewDropHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListViewDropHighlight.h; sourceTree = "<group>"; };
+		54E8E92C13D52F4200C0C3CD /* MyListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyListViewCell.h; sourceTree = "<group>"; };
+		54E8E92D13D52F4200C0C3CD /* MyListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyListViewCell.m; sourceTree = "<group>"; };
+		54E8E92F13D52F7A00C0C3CD /* ListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDelegate.h; sourceTree = "<group>"; };
+		54E8E93013D52F7A00C0C3CD /* ListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDelegate.m; sourceTree = "<group>"; };
+		54E8E93213D5301800C0C3CD /* RBListDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = RBListDelegate.rb; sourceTree = "<group>"; };
+		54E8E93413D530EA00C0C3CD /* MyListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyListViewCell.xib; path = External/PXListView/Resources/MyListViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				54E8E8B613D52ACA00C0C3CD /* PXListView */,
-				54E8E8AC13D52A7100C0C3CD /* AppDelegate.rb */,
 				54E8E8A513D52A7100C0C3CD /* Resources */,
 				54E8E8A913D52A7100C0C3CD /* Other Sources */,
 				54E8E89D13D52A7100C0C3CD /* Supporting Files */,
+				54E8E8AC13D52A7100C0C3CD /* AppDelegate.rb */,
+				54E8E92F13D52F7A00C0C3CD /* ListDelegate.h */,
+				54E8E93013D52F7A00C0C3CD /* ListDelegate.m */,
+				54E8E93213D5301800C0C3CD /* RBListDelegate.rb */,
 			);
 			path = MacRubyPXListView;
 			sourceTree = "<group>";
@@ -110,6 +123,7 @@
 		54E8E8A513D52A7100C0C3CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				54E8E93413D530EA00C0C3CD /* MyListViewCell.xib */,
 				54E8E8A613D52A7100C0C3CD /* MainMenu.xib */,
 			);
 			name = Resources;
@@ -135,6 +149,8 @@
 		54E8E8DC13D52ACA00C0C3CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				54E8E92C13D52F4200C0C3CD /* MyListViewCell.h */,
+				54E8E92D13D52F4200C0C3CD /* MyListViewCell.m */,
 				54E8E8E113D52ACA00C0C3CD /* PXListDocumentView.h */,
 				54E8E8E213D52ACA00C0C3CD /* PXListDocumentView.m */,
 				54E8E8E313D52ACA00C0C3CD /* PXListView+Private.h */,
@@ -223,6 +239,8 @@
 				54E8E8A813D52A7100C0C3CD /* MainMenu.xib in Resources */,
 				54E8E8AB13D52A7100C0C3CD /* rb_main.rb in Resources */,
 				54E8E8AD13D52A7100C0C3CD /* AppDelegate.rb in Resources */,
+				54E8E93313D5301800C0C3CD /* RBListDelegate.rb in Resources */,
+				54E8E93513D530EA00C0C3CD /* MyListViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +256,8 @@
 				54E8E91813D52ACA00C0C3CD /* PXListView+UserInteraction.m in Sources */,
 				54E8E91913D52ACA00C0C3CD /* PXListView.m in Sources */,
 				54E8E91A13D52ACA00C0C3CD /* PXListViewCell.m in Sources */,
+				54E8E92E13D52F4200C0C3CD /* MyListViewCell.m in Sources */,
+				54E8E93113D52F7A00C0C3CD /* ListDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

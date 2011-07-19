@@ -7,9 +7,23 @@
 #
 
 class AppDelegate
-    attr_accessor :window
+    attr_accessor :window, :listView
+
     def applicationDidFinishLaunching(a_notification)
-        # Insert code here to initialize your application
     end
+    
+    def awakeFromNib
+        @listView.cellSpacing = 2.0
+        @listView.allowsEmptySelection = true
+        @listView.allowsMultipleSelection = true
+        @listView.registerForDraggedTypes([NSStringPboardType])
+
+        @listView.reloadData
+    end
+
+    def reload_table(sender)
+        @listView.reloadData
+    end
+
 end
 
